@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family:sans-serif;
+    font-weight: 500;
+}
+h1, h2, h3, h4{
+    font-family: Merriweather, sans-serif;
+    font-weight: 700;
+}
+.navbar {
+    padding: 1.5rem 2rem;
+}
+
+.navbar-logo img {
+    height: 43px;
+    width: auto;
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.7);
+    margin: 0 0.5rem;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.login-btn {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-btn:hover {
+    color: #fff;
+}
+
+.float-banner {
+    background: rgba(255,255,255,0.1);
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.hero-title {
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.hero-button {
+    background-color: #FF3B5C;
+    border: none;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    font-size: 2.6rem;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 50px rgba(254, 25, 63, 0.624);
+}
+#cirlsm{
+    background: white;
+    color: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    padding: 0.3rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    animation: 1s pulse infinite;
+}
+@keyframes pulse {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+.hero-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px rgba(254, 25, 63, 0.73);
+}
+
+.hero-button:hover #cirlsm{
+    animation: none;
+    padding: 0.4rem;
+    font-size: 2.8rem;
+    color: #FF3B5C;
+}
+
+.hero-subtitle {
+    color: rgba(255,255,255,0.7);
+    font-size: 1.25rem;
+    margin-top: 2rem;
+}
+
+
+
+
+.vidsec{
+    background-color: #FF3B5C;
+    width: 100%;
+    height: fit-content;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.vidsec video{
+    width: 100%;
+    height: 100%;
+}
+.inlogo img{
+    height: 50px;
+}
+
+
+
+.info-title{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+.feature-card {
+    border: 1px solid #333;
+    transition: all 1s ease;
+    height: 100%;
+}
+.feature-icon {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    margin-bottom: 2.3rem;
+    color: #ff3366;
+    transition: all 0.5s ease;
+}
+.feature-card:hover .feature-icon {
+    transform: rotateY(360deg) scale(1.2);
+    filter: drop-shadow(0 0 10px rgba(246, 22, 78, 0.692));
+}
+.feature-title {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+}
+.soon-tag {
+    font-size: 0.8rem;
+    color: #444;
+}
+
+
+#viewbtn:hover{
+    background: #585757;
+}
+
+
+.hero-button2 {
+    background-color: #FF3B5C;
+    border: none;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    font-size: 2.3rem;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 50px rgba(254, 25, 63, 0.624);
+}
+.hero-button2:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 50px rgba(254, 25, 63, 0.73);
+}
+.hero-button2:hover #cirlsm{
+    animation: none;
+    padding: 0.4rem;
+    font-size: 2.8rem;
+    color: #FF3B5C;
+}
+
+
+#foot-a a{
+    font-size: 1rem;
+}
+#foot-a a:hover{
+    color: #FF3B5C;
+}
+
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    .info-title {
+        font-size: 3rem;
+    }
+    .navbar {
+        padding: 1rem;
+    }
+    .hero-button{
+        font-size: 1.2rem
+    }
+    #cirlsm{
+        padding: 0.1rem;
+        font-size: 1.5rem
+    }
+    .hero-button:hover #cirlsm{
+        padding: 0.25rem;
+        font-size: 1.6rem;
+    }
+    .hero-button2{
+        font-size: 1rem
+    }
+    .hero-button2:hover #cirlsm{
+        padding: 0.25rem;
+        font-size: 1.6rem;
+    }
+}
